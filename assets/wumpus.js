@@ -3,7 +3,7 @@ function send(message) {
 }
 var nicked = false;
 var audio = new Audio('assets/wumpus.mp3');
-var socket = new WebSocket("ws://wumpusclicker.pikadude.me");
+var socket = new WebSocket("wss://wumpusclicker.pikadude.me");
 socket.onopen = function () {
     socket.send("supbro")
 }, socket.onmessage = function (message) {
